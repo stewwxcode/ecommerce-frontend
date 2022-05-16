@@ -5,7 +5,7 @@ import thunk from 'redux-thunk'
 
 const initialState = {}
 
-// const middlewares = [thunk]
+ //const middlewares = [thunk]
 
 const store = createStore(rootReducer,initialState,composeWithDevTools(applyMiddleware(thunk)))
 
