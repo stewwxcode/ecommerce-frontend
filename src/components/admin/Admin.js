@@ -4,7 +4,9 @@ import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import AddCategory from "./AddCategory";
+import AddProduct from "./AddProduct";
 import CategoryTable from "./CategoryTable";
+import ProductTable from "./ProductTable";
 
 const Admin = () => {
   // const {user:{role},isLoaded} = useSelector(state=>state.auth)
@@ -25,6 +27,13 @@ const Admin = () => {
       </Box>
       <Box p={4}>
         <CategoryTable />
+      </Box>
+      <hr />
+      <Box p={4}>
+        <AddProduct />
+      </Box>
+      <Box p={4}>
+        <ProductTable />
       </Box>
     </Box>
   );
